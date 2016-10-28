@@ -33,6 +33,12 @@ import List from 'components/List';
 import ListItem from 'components/ListItem';
 import LoadingIndicator from 'components/LoadingIndicator';
 
+
+// Jess Styles
+import Dot from 'components/Dot';
+import Goal from 'components/Goal';
+import Day from 'components/Day';
+
 import styles from './styles.css';
 
 export class HomePage extends React.Component {
@@ -79,6 +85,8 @@ export class HomePage extends React.Component {
       mainContent = (<List items={this.props.repos} component={RepoListItem} />);
     }
 
+    console.log('mainContent', mainContent)
+
     return (
       <article>
         <Helmet
@@ -121,6 +129,11 @@ export class HomePage extends React.Component {
           <Button handleRoute={this.openFeaturesPage}>
             <FormattedMessage {...messages.featuresButton} />
           </Button>
+          
+          <div>
+            <Day/>  
+          </div>
+          
         </div>
       </article>
     );

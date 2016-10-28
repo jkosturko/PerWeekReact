@@ -1,0 +1,18 @@
+.dot {
+    width: 30px;
+    height: 30px;
+    background: #7fee1d;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+.container {
+  display: inline-block;
+}
+
+.dot {
+  display: inline-block;
+}
