@@ -11,8 +11,19 @@
 
 .container {
   display: inline-block;
+} 
+
+.goalContainer {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 70px;
 }
 
-.dot {
+.dotContainer {
   display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

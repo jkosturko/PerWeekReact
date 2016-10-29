@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './styles.css';
 import Day from '../Day'
 
-
 class Week extends React.Component {
   render () {
 

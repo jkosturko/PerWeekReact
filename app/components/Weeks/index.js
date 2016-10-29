@@ -1,63 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import Week from '../Week'
-
-var dataJson = {
-                "week1": {
-                  "title": "Week 1",
-                  "days": [
-                  {            
-                    "title": "Friday",
-                    "goals": {
-                      "weekly": [{
-                        "title": "Meditate",
-                        "endGoal": 2,
-                        "completed": 1
-                      },
-                      {
-                        "title": "Bath",
-                        "endGoal": 2,
-                        "completed": 1
-                      }],
-                      "daily": [{
-                          "title": "Water",
-                          "endGoal": 6,
-                          "completed": 3
-                        },
-                        {
-                          "title": "Stretch",
-                          "endGoal": 1,
-                          "completed": 1
-                        }
-                      ]}
-                    },
-                  {            
-                    "title": "Saturday",
-                    "goals": {
-                      "weekly": [{
-                        "title": "Meditate",
-                        "endGoal": 5,
-                        "completed": 1
-                      },
-                      {
-                        "title": "Bath",
-                        "endGoal": 2,
-                        "completed": 1
-                      }],
-                      "daily": [{
-                          "title": "Water",
-                          "endGoal": 6,
-                          "completed": 3
-                        },
-                        {
-                          "title": "Stretch",
-                          "endGoal": 1,
-                          "completed": 1
-                        }
-                      ]}
-                    }]
-                  }
-                }
+import dataJson from '../../data.json' //Get this from server
 
 class Weeks extends React.Component {
   render () {

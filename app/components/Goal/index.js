@@ -11,9 +11,9 @@ class Goal extends React.Component {
       DotRow.push(<Dot key={i}/>);
     }
   return (
-     <div>
-      {this.props.title}
-      {DotRow}
+    <div>
+      <div className={styles.goalContainer}>{this.props.title}</div>
+      <div className={styles.dotContainer}>{DotRow}</div>
      </div>
   );
 }
