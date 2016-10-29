@@ -1,23 +1,41 @@
 import React from 'react';
-
 import styles from './styles.css';
 import Goal from '../Goal'
 
 
 //Rename this goal
-function Day(props) {
-  return (
-    <div>
-    <h3>Weekly</h3>
-      <Goal title='Meditate' current={1} endGoal={2}/>
-      <Goal title='Gym' current={6} endGoal={8}/>
-    <h3>Daily</h3>
-      <Goal title='Drink Water' current={6} endGoal={6}/>
-      <Goal title='Stretch' current={1} endGoal={1}/>
+//Do I need to make a more unique key?
+class Day extends React.Component {
+  render() {
 
-    </div>
+    var dailyGoals = this.props.goals.daily.map(function(goal, i) {
+      const {title, endGoal, completed} = goal
 
-  );
+      return(
+        <Goal title={title} endGoal={endGoal} completed={completed} key={i} />
+      )
+    })
+
+    var weeklyGoals = this.props.goals.weekly.map(function(goal, i) {
+      const {title, endGoal, completed} = goal
+
+      return (
+        <Goal title={title} endGoal={endGoal} completed={completed} key={i} />
+      )
+    })
+
+      return (
+        <div>
+        <h2>{this.props.title}</h2>
+        <h3>Weekly</h3>
+          {weeklyGoals}
+        <h3>Daily</h3>
+          {dailyGoals}
+        </div>  
+     );
+
+  }
+
 }
 
 export default Day;

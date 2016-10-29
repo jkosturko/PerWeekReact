@@ -1,6 +1,4 @@
 import React from 'react';
-import _ from 'underscore';
-
 import styles from './styles.css';
 import Dot from '../Dot'
 
@@ -16,7 +14,6 @@ class Goal extends React.Component {
      <div>
       {this.props.title}
       {DotRow}
-      
      </div>
   );
 }

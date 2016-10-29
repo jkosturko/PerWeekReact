@@ -1,14 +1,14 @@
 .dot {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: pink;
+    background: #7fee1d;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
     display: inline-block;
-    vertical-align: bottom;
 }
 
 
+.container {
+  display: inline-block;
+}

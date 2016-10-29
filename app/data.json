@@ -1,0 +1,30 @@
+{
+  "week1": {
+    "Day": {
+      "title": "Friday",
+      "goals": {
+        "Weekly": [{
+            "title": "Meditate",
+            "endGoal": 2,
+            "completed": 1
+          },
+          {
+            "title": "Bath",
+            "endGoal": 2,
+            "completed": 1
+          }
+          ],
+        "Daily": [{
+            "title": "Water",
+            "endGoal": 6,
+            "completed": 3
+          },
+          {
+            "title": "Stretch",
+            "endGoal": 1,
+            "completed": 1
+          }
+        ]}
+      }
+    }
+  }

@@ -38,6 +38,9 @@ import LoadingIndicator from 'components/LoadingIndicator';
 import Dot from 'components/Dot';
 import Goal from 'components/Goal';
 import Day from 'components/Day';
+import Week from 'components/Week';
+import Weeks from 'components/Weeks';
+
 
 import styles from './styles.css';
 
@@ -131,7 +134,7 @@ export class HomePage extends React.Component {
           </Button>
           
           <div>
-            <Day/>  
+            <Weeks/>  
           </div>
           
         </div>
